@@ -19,8 +19,9 @@ GitHub Copilot instructions are provided in `.github/copilot-instructions.md`.
 The included GitHub Actions workflows check the required AI-SDLC structure and
 provide a technology-neutral source release baseline. Add project-specific
 build, test and artifact-publishing steps during VALIDATE. Add a
-`.github/workflows/cd.yml` only during DEPLOY, after the deployment platform,
-required secrets and post-deploy checks have been decided.
+`.github/workflows/cd.yml` is included as an inactive template and must be
+configured during DEPLOY, after the deployment platform, required secrets and
+post-deploy checks have been decided.
 
 ## Repository artefacts
 
@@ -31,4 +32,4 @@ required secrets and post-deploy checks have been decided.
 - `skills/ai-sdlc-*` — phase-specific execution guidance
 - `.devcontainer/` — Codespaces and VS Code baseline
 - `.vscode/` — project-specific debug configuration placeholder
-- `.github/` — Copilot instructions, CI and release baseline
+- `.github/` — Copilot instructions, CI, release and CD workflow templates

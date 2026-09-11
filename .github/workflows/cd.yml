@@ -1,0 +1,49 @@
+name: CD
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Deployment environment
+        required: true
+        default: production
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment || 'production' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check deployment configuration
+        env:
+          CD_ENABLED: ${{ vars.CD_ENABLED }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$CD_ENABLED" != "true" ]; then
+            echo "CD template is present but inactive. Set CD_ENABLED=true after adding the project deployment and smoke-test commands."
+            exit 0
+          fi
+          test -x scripts/deploy.sh
+          test -x scripts/smoke-test.sh
+
+  deploy:
+    if: vars.CD_ENABLED == 'true'
+    needs: preflight
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment || 'production' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy validated artifact
+        run: ./scripts/deploy.sh
+
+      - name: Run post-deployment smoke test
+        run: ./scripts/smoke-test.sh
