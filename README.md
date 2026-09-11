@@ -16,9 +16,11 @@ application-specific code.
 5. Use `docs/specs/UC-TEMPLATE.md` for the first use-case specification.
 
 GitHub Copilot instructions are provided in `.github/copilot-instructions.md`.
-The included GitHub Actions workflow checks that the required AI-SDLC structure
-remains present. Add project-specific build, test, release and deployment
-workflows only when the project requires them.
+The included GitHub Actions workflows check the required AI-SDLC structure and
+provide a technology-neutral source release baseline. Add project-specific
+build, test and artifact-publishing steps during VALIDATE. Add a
+`.github/workflows/cd.yml` only during DEPLOY, after the deployment platform,
+required secrets and post-deploy checks have been decided.
 
 ## Repository artefacts
 
@@ -29,4 +31,4 @@ workflows only when the project requires them.
 - `skills/ai-sdlc-*` — phase-specific execution guidance
 - `.devcontainer/` — Codespaces and VS Code baseline
 - `.vscode/` — project-specific debug configuration placeholder
-- `.github/` — Copilot instructions and structural validation
+- `.github/` — Copilot instructions, CI and release baseline

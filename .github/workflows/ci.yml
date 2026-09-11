@@ -1,4 +1,4 @@
-name: AI-SDLC structure
+name: CI
 
 on:
   push:
@@ -27,3 +27,6 @@ jobs:
           test -f .github/copilot-instructions.md
           test -d skills
           test -d .devcontainer
+
+      - name: Check whitespace errors
+        run: git diff --check
