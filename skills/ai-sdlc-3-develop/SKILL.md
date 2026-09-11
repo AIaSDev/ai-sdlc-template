@@ -65,13 +65,6 @@ Run the project-specific unit tests documented in `docs/PROJECT.md`.
 ## Rules
 
 - Tests before code.
-- Keep code minimal.
-- Avoid unnecessary comments.
-- Prefer updating existing tests and code.
-- Respect Clean Architecture  
-
-  domain ← application ← interfaces ← infrastructure
-
 - Ask the user if requirements are unclear.
 
 ---
@@ -82,10 +75,4 @@ Implementation complete.
 
 Unit tests pass.
 
-Update:
-
-docs/TASKS.md
-
-Set:
-
-PHASE → 3
+Record phase 3 and status in `docs/TASKS.md` per `AGENTS.md`.
