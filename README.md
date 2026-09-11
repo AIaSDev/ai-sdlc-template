@@ -3,7 +3,7 @@
 Starter repository for student and teaching projects that use the AI-assisted
 Software Development Lifecycle (AI-SDLC).
 
-The method is documented canonically in [AISL Docs](https://docs.aisl.science/ai-sdlc). This repository contains only the executable, repository-local
+The method is documented canonically in [AISL Docs](https://docs.aisl.science/learning-and-resources/ai-sdlc). This repository contains only the executable, repository-local
 workflow artefacts. It does not contain a complete copy of the method or
 application-specific code.
 

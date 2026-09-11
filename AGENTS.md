@@ -65,7 +65,7 @@ before the project context has been completed.
 - Respect **Clean Architecture**  
   domain ← application ← interfaces ← infrastructure
 - Prefer **small vertical slices** (one UC end-to-end).
-- Read the [canonical AI-SDLC documentation](https://docs.aisl.science/ai-sdlc)
+- Read the [canonical AI-SDLC documentation](https://docs.aisl.science/learning-and-resources/ai-sdlc)
   when terminology or lifecycle responsibilities are unclear.
 
 If requirements or architecture are unclear → ask the user.

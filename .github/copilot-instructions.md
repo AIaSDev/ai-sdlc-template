@@ -10,5 +10,5 @@ This repository follows the AI-SDLC. Before proposing or changing code:
 Keep changes within the active use-case scope, respect the documented
 architecture, derive tests from acceptance criteria, and update the lifecycle
 artefacts when the phase advances. Ask when requirements or architecture are
-ambiguous. See the [canonical AI-SDLC documentation](https://docs.aisl.science/ai-sdlc)
+ambiguous. See the [canonical AI-SDLC documentation](https://docs.aisl.science/learning-and-resources/ai-sdlc)
 for the method and terminology.
