@@ -1,0 +1,29 @@
+name: AI-SDLC structure
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify required AI-SDLC artefacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f AGENTS.md
+          test -f docs/PROJECT.md
+          test -f docs/TASKS.md
+          test -f docs/specs/UC-TEMPLATE.md
+          test -f .github/copilot-instructions.md
+          test -d skills
+          test -d .devcontainer
