@@ -1,7 +1,7 @@
 # AI-SDLC Project Template
 
-Starter repository for student and teaching projects that use the AI-assisted
-Software Development Lifecycle (AI-SDLC).
+Starter repository for student and teaching projects that use the AI-Assisted
+Software Development Life Cycle (AI-SDLC).
 
 The method is documented canonically in [AISL Docs](https://docs.aisl.science/learning-and-resources/ai-sdlc). This repository contains only the executable, repository-local
 workflow artefacts. It does not contain a complete copy of the method or
