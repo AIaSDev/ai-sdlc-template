@@ -5,7 +5,7 @@
     "LANG": "en_US.UTF-8",
     "LC_ALL": "en_US.UTF-8"
   },
-  "postCreateCommand": "bash scripts/setup-skills.sh 1",
+  "postCreateCommand": "bash scripts/setup-skills.sh 1 && bash scripts/setup-python.sh",
   "customizations": {
     "vscode": {
       "extensions": [

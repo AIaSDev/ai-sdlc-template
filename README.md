@@ -26,12 +26,13 @@ post-deploy checks have been decided.
 ## Agent setup
 
 Codespaces creates a Python development container with Python, Pylance,
-debugging and GitHub Copilot extensions. It also prepares `.agents/skills` for
-Copilot automatically. The default terminal locale is English; the VS Code UI
-uses its own user display-language setting.
+debugging and GitHub Copilot extensions. It also prepares `.agents/skills` and
+the Python environment automatically. The default terminal locale is English;
+the VS Code UI uses its own user display-language setting.
 
 Run `bash scripts/setup-skills.sh` from the repository root when another agent
-is used.
+is used. Run `bash scripts/setup-python.sh` again when the Python environment
+needs to be recreated or refreshed.
 Choose `copilot`, `codex`, `claude`, `cline`, `opencode`, `cursor`, `kiro`,
 `junie`, `devin` or `all`. The script links to the canonical `skills/` directory and
 falls back to copying if links are unavailable. Existing destinations are kept;
@@ -49,4 +50,7 @@ For non-interactive setup, pass the same selection, for example `bash scripts/se
 - `skills/ai-sdlc-*` — phase-specific execution guidance
 - `.devcontainer/` — Codespaces and VS Code baseline
 - `.vscode/` — project-specific debug configuration placeholder
+- `environments/python/` — Python environment profile copied by
+  `scripts/setup-python.sh`
+- `scripts/setup-python.sh` — Python environment and dependency setup
 - `.github/` — Copilot instructions, CI, release and CD workflow templates

@@ -1,0 +1,47 @@
+# Python bytecode and caches
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and build output
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test, coverage and type-checker output
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+
+# Local configuration and data
+.env
+.envrc
+*.log
+*.db
+*.sqlite3
+
+# IDE and tool state
+.idea/
+.cursorignore
+.cursorindexingignore
+.pdm-python
+.pdm-build/
+.pixi/
+.ipynb_checkpoints/
