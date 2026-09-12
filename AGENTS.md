@@ -63,7 +63,9 @@ before the project context has been completed.
 
 ## Rules
 
-- Communicate and work in the language used in the user prompt.
+- Use the language of the current user prompt for all communication and all
+  natural-language artifacts. Do not default to the language of earlier
+  messages.
 - Update existing artifacts; create only what is missing.
 - Keep artifacts **minimal**.
 - Avoid unnecessary comments in code.
