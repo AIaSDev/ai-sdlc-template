@@ -32,6 +32,8 @@ falls back to copying if links are unavailable. Existing destinations are kept;
 copies must be refreshed manually after skill changes. Verify discovery in your
 agent; setup does not install or configure the agent itself.
 
+For non-interactive setup, pass the same selection, for example `bash scripts/setup-skills.sh 1`. Selections 2 and 3 also create a missing `CLAUDE.md` containing `@AGENTS.md`; an existing file is preserved. Shared instructions and skills are not modified.
+
 ## Repository artefacts
 
 - `AGENTS.md` — lifecycle router and guardrails
