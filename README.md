@@ -49,8 +49,7 @@ For non-interactive setup, pass the same selection, for example `bash scripts/se
 - `docs/specs/` — executable use-case specifications
 - `skills/ai-sdlc-*` — phase-specific execution guidance
 - `.devcontainer/` — Codespaces and VS Code baseline
-- `.vscode/` — project-specific debug configuration placeholder
-- `environments/python/` — Python environment profile copied by
-  `scripts/setup-python.sh`
+- `environments/python/` — Python environment profile, including the source
+  VS Code debug configuration
 - `scripts/setup-python.sh` — Python environment and dependency setup
 - `.github/` — Copilot instructions, CI, release and CD workflow templates
