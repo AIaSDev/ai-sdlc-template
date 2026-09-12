@@ -8,6 +8,11 @@ on:
         required: true
         default: production
   workflow_call:
+    inputs:
+      environment:
+        type: string
+        required: false
+        default: production
 
 permissions:
   contents: read
@@ -15,12 +20,15 @@ permissions:
 jobs:
   preflight:
     runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.config.outputs.enabled }}
     environment: ${{ inputs.environment || 'production' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Check deployment configuration
+        id: config
         env:
           CD_ENABLED: ${{ vars.CD_ENABLED }}
         shell: bash
@@ -32,9 +40,10 @@ jobs:
           fi
           test -x scripts/deploy.sh
           test -x scripts/smoke-test.sh
+          echo "enabled=true" >> "$GITHUB_OUTPUT"
 
   deploy:
-    if: vars.CD_ENABLED == 'true'
+    if: needs.preflight.outputs.enabled == 'true'
     needs: preflight
     runs-on: ubuntu-latest
     environment: ${{ inputs.environment || 'production' }}

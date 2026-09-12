@@ -28,7 +28,7 @@ jobs:
           test -d skills
 
       - name: Check whitespace errors
-        run: git diff --check
+        run: git show --check --oneline HEAD
 
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
