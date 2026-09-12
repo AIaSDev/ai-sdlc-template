@@ -25,14 +25,20 @@ post-deploy checks have been decided.
 
 ## Agent setup
 
-Run `bash scripts/setup-skills.sh` from the repository root.
-Choose **1** for `.agents/skills` (Copilot/Codex), **2** for `.claude/skills`,
-or **3** for both. The script links to the canonical `skills/` directory and
+Codespaces creates a Python development container with Python, Pylance,
+debugging and GitHub Copilot extensions. It also prepares `.agents/skills` for
+Copilot automatically. The default terminal locale is English; the VS Code UI
+uses its own user display-language setting.
+
+Run `bash scripts/setup-skills.sh` from the repository root when another agent
+is used.
+Choose `copilot`, `codex`, `claude`, `cline`, `opencode`, `cursor`, `kiro`,
+`junie`, `devin` or `all`. The script links to the canonical `skills/` directory and
 falls back to copying if links are unavailable. Existing destinations are kept;
 copies must be refreshed manually after skill changes. Verify discovery in your
 agent; setup does not install or configure the agent itself.
 
-For non-interactive setup, pass the same selection, for example `bash scripts/setup-skills.sh 1`. Selections 2 and 3 also create a missing `CLAUDE.md` containing `@AGENTS.md`; an existing file is preserved. Shared instructions and skills are not modified.
+For non-interactive setup, pass the same selection, for example `bash scripts/setup-skills.sh copilot`. The `claude` and `all` selections also create a missing `CLAUDE.md` containing `@AGENTS.md`; an existing file is preserved. Shared instructions and skills are not modified.
 
 ## Repository artefacts
 
