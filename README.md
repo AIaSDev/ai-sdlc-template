@@ -1,5 +1,7 @@
 # AI-SDLC Project Template
 
+[![DOI](https://zenodo.org/badge/1366251878.svg)](https://doi.org/10.5281/zenodo.22833064)
+
 Starter repository for student and teaching projects that use the AI-Assisted
 Software Development Life Cycle (AI-SDLC).
 
