@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use AI-SDLC in your work, please cite the archived release."
+title: "AI-SDLC Project Template: AI-Assisted Software Development Life Cycle"
+type: software
+authors:
+  - family-names: Martin
+    given-names: Andreas
+    orcid: "https://orcid.org/0000-0002-7909-7663"
+  - family-names: Schwander
+    given-names: Sandro
+    orcid: "https://orcid.org/0009-0006-9708-3800"
+version: 1.0.0
+date-released: 2026-09-18
+repository-code: "https://github.com/AIaSDev/ai-sdlc-template"
+url: "https://ai-sdlc.aisl.science/"

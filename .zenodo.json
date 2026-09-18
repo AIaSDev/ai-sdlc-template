@@ -1,0 +1,34 @@
+{
+  "title": "AI-SDLC Project Template: AI-Assisted Software Development Life Cycle",
+  "description": "The reusable project template for the AI-Assisted Software Development Life Cycle (AI-SDLC), a lightweight and spec-driven lifecycle for AI-assisted software development. The template provides repository-local guidance, phase-specific Agent Skills, specifications, task-state and architecture artifacts, and supporting project configuration.",
+  "creators": [
+    {
+      "name": "Martin, Andreas",
+      "orcid": "0000-0002-7909-7663",
+      "affiliation": "FHNW University of Applied Sciences and Arts Northwestern Switzerland"
+    },
+    {
+      "name": "Schwander, Sandro",
+      "orcid": "0009-0006-9708-3800",
+      "affiliation": "FHNW University of Applied Sciences and Arts Northwestern Switzerland"
+    }
+  ],
+  "version": "1.0.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "AI-assisted software development",
+    "AI coding agents",
+    "agentic coding",
+    "spec-driven development",
+    "test-driven development",
+    "software development lifecycle"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://ai-sdlc.aisl.science/",
+      "relation": "isDocumentedBy"
+    }
+  ]
+}
