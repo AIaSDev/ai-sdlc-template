@@ -1,5 +1,5 @@
 {
-  "title": "AI-SDLC Project Template: AI-Assisted Software Development Life Cycle",
+  "title": "The AI-SDLC Template and Method: AI-Assisted Software Development Life Cycle",
   "description": "The reusable project template for the AI-Assisted Software Development Life Cycle (AI-SDLC), a lightweight and spec-driven lifecycle for AI-assisted software development. The template provides repository-local guidance, phase-specific Agent Skills, specifications, task-state and architecture artifacts, and supporting project configuration.",
   "creators": [
     {
